@@ -1,4 +1,7 @@
 # Install openvpn: https://openvpn.net/cloud-docs/openvpn-3-client-for-linux/
 # https://www.ovpn.com/en/guides/ubuntu-cli #.conf is same as .ovpn
 
-sudo openvpn selma.hadzic.conf
+sudo openvpn <confname>.conf
+
+# check status https://askubuntu.com/questions/967885/check-if-openvpn-is-running
+sudo systemctl status openvpn@<confname>
