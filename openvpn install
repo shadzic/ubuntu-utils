@@ -1,6 +1,16 @@
 # Install openvpn: https://openvpn.net/cloud-docs/openvpn-3-client-for-linux/
 # https://www.ovpn.com/en/guides/ubuntu-cli #.conf is same as .ovpn
 
+# to install: https://github.com/OpenVPN/openvpn
+	tar -zxf openvpn-<version>.tar.gz
+	cd openvpn-<version>
+	./configure
+	make
+	make install
+  
+ # by error lsdo --> check stackoverflow
+
+# to launch
 sudo openvpn <confname>.conf
 
 # check status https://askubuntu.com/questions/967885/check-if-openvpn-is-running
