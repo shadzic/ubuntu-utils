@@ -1,0 +1,2 @@
+find -iname "nomdefichier" # find in this folder and subfolder
+find / -iname "nomdefichier" # find in root folder --> might require sudo for permission
