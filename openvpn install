@@ -11,6 +11,7 @@
  # by error lsdo --> check stackoverflow
 
 # to launch
+cd etc/openvpn
 sudo openvpn <confname>.conf
 
 # check status https://askubuntu.com/questions/967885/check-if-openvpn-is-running
