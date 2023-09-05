@@ -1,1 +1,9 @@
 # https://jumpcloud.com/blog/how-to-encrypt-ubuntu-20-04-desktop-post-installation#:~:text=How%20to%20Encrypt%20Ubuntu%2020.04%20Desktop%20Post%20Installation,Space%20...%206%20Step%206%3A%20Clean%20up%20
+
+# encrypt a file as a zip: https://askubuntu.com/questions/342900/compressing-folders-with-password-via-command-line
+zip -er F.zip F
+
+# This will prompt you for a password. Give it, and that will create a password-protected zip file from that folder.
+# -e enables encryption for your zip file. This is what makes it ask for the password.    -r makes the command recursive, meaning that all the files inside the folder will be added to the zip file.
+# F.zip is the name of the output file.
+# F is the folder you want to zip. It is located where you're currently are when you type the command
