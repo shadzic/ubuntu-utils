@@ -2,11 +2,11 @@
 # https://www.ovpn.com/en/guides/ubuntu-cli #.conf is same as .ovpn
 
 # to install: https://github.com/OpenVPN/openvpn
-	tar -zxf openvpn-<version>.tar.gz
-	cd openvpn-<version>
-	./configure
-	make
-	make install
+tar -zxf openvpn-<version>.tar.gz
+cd openvpn-<version>
+./configure
+make
+make install
   
  # by error lsdo --> check stackoverflow
 
