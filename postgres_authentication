@@ -1,0 +1,16 @@
+#https://stackoverflow.com/questions/18664074/getting-error-peer-authentication-failed-for-user-postgres-when-trying-to-ge
+sudo editor /etc/postgresql/16/main/pg_hba.conf
+# Change the postgres line at the bottom of the file to "trust"
+
+sudo service postgresql restart
+psql -U postgres
+db> ALTER USER postgres with password 'your-pass';
+exit
+
+sudo editor /etc/postgresql/16/main/pg_hba.conf
+# Change the postgres line at the bottom of the file to md5
+
+sudo service postgresql restart
+
+psql -U postgres
+ 
