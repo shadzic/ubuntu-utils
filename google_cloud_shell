@@ -1,0 +1,8 @@
+# To modify the shell prompt permanently
+sudo nano /google/devshell/bashrc.google
+
+# Change the PS1 variable (especially remove \u to remove username)
+
+source /google/devshell/bashrc.google
+
+# Reference: https://dev.to/ndsn/tips-and-tricks-for-using-google-cloud-shell-as-a-cloud-ide-4cek#tipstricks
