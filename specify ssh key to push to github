@@ -1,0 +1,2 @@
+# In bash, after having generated an ssh key to your git provider (e.g. Github, Azure devops)
+GIT_SSH_COMMAND='ssh -i ~/.ssh/id_rsa_specificfile' git push origin feature-branch
