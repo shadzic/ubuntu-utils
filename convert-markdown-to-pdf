@@ -11,3 +11,26 @@ pandoc filename.md -V geometry:margin=1in -o filename.pdf
 
 # Add a page break:
 \newpage
+
+
+# To fix images: https://stackoverflow.com/questions/16626462/figure-position-in-markdown-when-converting-to-pdf-with-knitr-and-pandoc/33801326#33801326
+Add a tex file in the same folder of the .md
+
+\usepackage{float}
+\let\origfigure\figure
+\let\endorigfigure\endfigure
+\renewenvironment{figure}[1][2] {
+    \expandafter\origfigure\expandafter[H]
+} {
+    \endorigfigure
+}
+
+Add a header at the top of the md file:(assuming you called the .tex file 'preamble-latex.tex'):
+
+---
+output:
+  rmarkdown::pdf_document:
+    fig_caption: yes        
+    includes:  
+      in_header: preamble-latex.tex
+---
