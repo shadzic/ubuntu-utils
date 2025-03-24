@@ -34,3 +34,8 @@ output:
     includes:  
       in_header: preamble-latex.tex
 ---
+
+
+
+# Change the size of the image
+![caption](images/path.png){width="300"}
