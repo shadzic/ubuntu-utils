@@ -1,0 +1,5 @@
+# To extract the value from the KEY in the ENV_VAR (format: ENV_VAR = {"KEY": "value"})
+echo $<ENV_VAR> | jq -r '.<KEY>'
+
+# TO assign it to a env_var
+export ENV_VAR_VALUE=$(echo $ENV_VAR | jq -r '.<KEY>')
