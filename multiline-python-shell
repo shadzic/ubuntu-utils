@@ -1,0 +1,3 @@
+ python -<<'PY'
+ <my python code>
+ PY
